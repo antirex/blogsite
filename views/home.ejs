@@ -1,0 +1,15 @@
+<%- include("partials/header"); %> 
+<h1>Home</h1>
+<p><%= homeContent %> </p>
+<%posts.forEach(function(obj){ %>
+   <h1><%= obj.blogTitle %> </h1>
+      <% if(obj.blogContent.length>20){%> 
+         <p><%= obj.blogContent.substring(0,150) %> </p>
+            <a href="/posts/<%= obj.blogTitle %> ">Read More...</a>
+     <%  }else{%> 
+         <p><%= obj.blogContent %> </p>
+    <%  }  %> 
+  
+<%})%>
+
+<%- include("partials/footer"); %> 

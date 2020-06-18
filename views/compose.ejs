@@ -1,0 +1,15 @@
+<%- include("partials/header"); %>
+<h1>Home</h1>
+<form action="/compose" method="post" style="padding: 1rem;">
+    <div class="content">
+        <label for="title">Title</label>
+        <input type="text" name="newContent" placeholder="Enter the new title" id="title" class="input-compose" autocomplete="off">
+    </div>
+    <div class="content">
+        <label for="content">Post</label>
+        <textarea name="post" id="content" cols="150" rows="10" class="input-compose" placeholder="Add your content here"></textarea>
+    </div>
+    <div style="text-align: center;"><button class=" btn1 btn btn-lg btn-outline-dark" type="submit" >Publish</button></div>
+    
+</form>
+<%- include("partials/footer"); %>

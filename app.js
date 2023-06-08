@@ -47,7 +47,7 @@ app.get("/contact", function (req, res) {
 
 app.get("/posts/:topic", function (req, res) {
   let urlTitle = _.lowerCase(req.params.topic);
-
+  console.log(urlTitle);
   postsArray.forEach(function (obj) {
     let pageTitle = obj.blogTitle;
     let pageContent = obj.blogContent;
@@ -63,6 +63,7 @@ app.post("/compose", function (req, res) {
     blogContent: req.body.post,
   };
   postsArray.push(post);
+  console.log("Directed to the root route");
   res.redirect("/");
 });
 

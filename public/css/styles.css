@@ -48,7 +48,7 @@ body{
     padding: 1rem;
 }
 .btn1{
-    padding:1rem 5rem;
+    padding:2rem 5rem;
     border: 2px solid black;
     background-color: #ff5c5c;
     text-align: center;
@@ -57,7 +57,7 @@ body{
 }
 .btn1:hover{
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 3rem;
     color: #ff5c5c;
     transition: ease-in-out 0.5s;
 }
